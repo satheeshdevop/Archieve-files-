@@ -1,0 +1,25 @@
+Archiving Files and Directories with Compression
+
+ABOUT THIS LAB
+	Creating a compressed archive file can be useful for backup purposes. In this hands-on lab, we're going to make a compressed archive of a directory containing a custom application before upgrading the application to guarantee that we have a copy of the working program.
+
+LEARNING OBJECTIVES
+	Create an Archive Directory in the cloud_user Home Directory
+	2. Make the Archive Directory the Current Directory
+	3. Archive the /opt/myapp Directory as myapp.tar.gz
+	4. List the Contents of myapp.tar.gz and Redirect It to app.list
+
+
+Step1:	Create a archive file 
+#  mkdir archive  
+
+Step2:	Go to the directory
+#  cd archive 
+ 
+Step3:	Make archive (myapp.tar.gz) file in opt/myapp 
+ #  tar -cvzf myapp.tar.gz /opt/myapp
+
+Step4:	Redirect the contents from myapp.tar.gz to  app.list
+#  tar -tvf myapp.tar.gz > app.list
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = = 
